@@ -1,0 +1,242 @@
+body{
+                background: #ffffff;
+                font-family: 'Times New Roman', Times, serif;
+                color:#17936F;
+                font-size: 1.1rem;
+            }
+            main{
+              border:80px solid transparent;border-image:url('../images/border.png') 500 round ;
+              background-color: #F7F7EC;
+            }
+            .navbar {
+                background: #EBEBE5;
+            }
+            .navbar .nav-link{
+                color: #5D5D5D;
+                font-size: 1.1rem;
+                padding-left: 1.1rem !important;
+                padding-right: 1.1rem !important;
+            }
+            #home{
+                min-height: 60px;
+            }
+            #celebrate,
+#venue,
+#event,
+#faq {
+  scroll-margin-top: 60px; /* Adjust this value to the height of your navbar */
+}
+
+
+            .nav-link.active{
+                color:#17936F !important;
+                text-decoration: underline;
+            }
+            .nav-link:hover{
+                color:#17936F !important;
+                text-decoration: underline;
+            }
+            .navbar-brand {
+                font-size: 1.6rem;
+                color: #5D5D5D !important;
+                letter-spacing: -1px;
+            }
+            main #celebrate {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* justify-content: center; */
+            }
+            main .aflogo{
+                
+                width: 120px;
+            }
+            main .aflogo img{
+                object-fit: contain;
+            }
+            .mainimage{
+                text-align: center;
+                margin-top: -10px;
+            }
+            .mainimage img{
+                width: 60%; height: 50vh; object-fit: cover;
+                max-height: 50vh;
+                border-radius: 10px;
+            }
+
+            #venue,#event,#faq{
+                min-height: 100vh;
+                position: relative;
+                
+            }
+            .venue_content{
+                width: 60%;
+                margin: auto;
+                text-align: center;
+                padding-top: 50px;
+                padding-top:10vh ;
+            }
+            .venue_content p{
+                margin-top: 5vh;
+            }
+           .venueslider{
+            position: absolute;
+    bottom: 10vh;
+    left: 0px;
+    right: 0px;
+           }
+.swiper-container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px 0;
+            position: relative; /* Needed for navigation buttons */
+            bottom: 0px;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eee;
+            border-radius: 8px;
+            overflow: hidden; /* To prevent image overflow */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            padding: 10px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: 20px;
+        }
+        .swiper-button-prev { left: 10px; }
+        .swiper-button-next { right: 10px; }
+.event_content{
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding-top: 50px;
+            padding-top:5vh ;
+        }
+        .event_content p{
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 1.1rem;
+
+        }
+        
+        #event table{
+            width: 60%;
+            border-collapse: collapse;
+            margin: auto;
+            text-align: left;
+        }
+        
+        .event_content .swiper-slide img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .faq_content h1{
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+        .faq_content table{
+            width: 60%;
+            border-collapse: collapse;
+            margin: auto;
+            text-align: left;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+        .faq_content table th, .faq_content table td {
+            vertical-align: top;
+        }
+        .faq_content table td{
+            padding-bottom: 10px;
+        }
+        .faq_content table td:first-child {
+            width: 20%;
+            
+        }
+        .faq_content a{
+            color: #17936F;
+        }
+        footer{
+            
+            padding:  0 1rem 0 1rem;
+            margin-top: .5rem;
+        }
+        footer *{
+            font-size: .8rem;
+            color: #000;
+        }
+        footer a{
+            text-decoration: none;
+        }
+        footer ul{
+            padding: 0px;
+        }
+        footer ul li{
+            margin-left: 25px;
+        }
+        footer .footer_social ul li{
+            margin-left: 5px;
+        }
+        .social_icon{
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+        @media screen and (max-width: 1024px) {
+            #event table,.faq_content table{
+                    width: 90%;
+                }
+        }
+            @media screen and (max-width: 768px) {
+                main{
+                    border-width:50px;
+                }
+                .mainimage img{
+                    width: 80%;
+                    height: 40vh;
+                }
+                .venue_content,.event_content{
+                    width: 90%;
+                }
+                .faq_content{
+                    width: 99%;
+                }
+                #event table,.faq_content table{
+                    width: 90%;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .faq_content table{
+                    width: 100%;
+                }
+                .faq_content table td:first-child {
+                    width: 30%;
+                }
+            }
