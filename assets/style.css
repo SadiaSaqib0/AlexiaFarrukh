@@ -25,6 +25,7 @@ body{
 #event,
 #faq {
   scroll-margin-top: 60px; /* Adjust this value to the height of your navbar */
+  position: relative;
 }
 
 
@@ -42,7 +43,7 @@ body{
                 letter-spacing: -1px;
             }
             main #celebrate {
-                min-height: 100vh;
+                min-height: 85vh;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -86,50 +87,36 @@ body{
     left: 0px;
     right: 0px;
            }
-.swiper-container {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 20px 0;
-            position: relative; /* Needed for navigation buttons */
-            bottom: 0px;
-        }
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #eee;
-            border-radius: 8px;
-            overflow: hidden; /* To prevent image overflow */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .swiper-slide img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-        .swiper-button-prev,
-        .swiper-button-next {
-            color: #333;
-            background-color: rgba(255, 255, 255, 0.7);
-            border-radius: 50%;
-            padding: 10px;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        .swiper-button-prev:after,
-        .swiper-button-next:after {
-            font-size: 20px;
-        }
-        .swiper-button-prev { left: 10px; }
-        .swiper-button-next { right: 10px; }
+.imagescontainer{
+    /* width: 100%; */
+    background-color: #EBEBE5;
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 50px;
+    left: -80px;
+    right: -80px;
+}
+
+.imagescontainer .imagesbox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imagescontainer .imagesbox .swiper-slide{
+    width: 20%;
+    height: 300px;
+   margin: 0 5px;
+}
+.imagescontainer .imagesbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
 .event_content{
             width: 50%;
             margin: auto;
@@ -218,6 +205,17 @@ body{
                 main{
                     border-width:50px;
                 }
+                .imagescontainer{
+                    left: -50px;
+                    right: -50px;
+                    padding: 20px 5px;
+                    bottom: 10px;
+                    
+                }
+                .imagescontainer .imagesbox .swiper-slide{
+                    height: 150px;
+                    margin: 0px 2px;
+                }
                 .mainimage img{
                     width: 80%;
                     height: 40vh;
@@ -229,7 +227,7 @@ body{
                     width: 99%;
                 }
                 #event table,.faq_content table{
-                    width: 90%;
+                    width: 100%;
                 }
             }
             @media screen and (max-width: 768px) {
@@ -238,5 +236,10 @@ body{
                 }
                 .faq_content table td:first-child {
                     width: 30%;
+                }
+            }
+            @media screen and (max-width: 400px) {
+                #event table{
+                    font-size: .9rem;
                 }
             }
