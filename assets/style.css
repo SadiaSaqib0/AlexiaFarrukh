@@ -87,7 +87,7 @@ body{
     left: 0px;
     right: 0px;
            }
-.imagescontainer{
+.imagescontainer {
     /* width: 100%; */
     background-color: #EBEBE5;
     padding: 20px 10px;
@@ -97,25 +97,27 @@ body{
     right: -80px;
 }
 
-.imagescontainer .imagesbox{
+.imagescontainer .imagesbox {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-}
-.imagescontainer .imagesbox .swiper-slide{
+.imagescontainer .imagesbox .swiper-slide {
     width: 20%;
-    height: 300px;
-   margin: 0 5px;
+    margin: 0 5px;
+    
+    /* This is the new, modern way to make it a square */
+    aspect-ratio: 1 / 1;
 }
-.imagescontainer .imagesbox img{
+
+.imagescontainer .imagesbox img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    
 }
 .event_content{
             width: 50%;
@@ -212,10 +214,10 @@ body{
                     bottom: 10px;
                     
                 }
-                .imagescontainer .imagesbox .swiper-slide{
+                /* .imagescontainer .imagesbox .swiper-slide{
                     height: 150px;
                     margin: 0px 2px;
-                }
+                } */
                 .mainimage img{
                     width: 80%;
                     height: 40vh;
