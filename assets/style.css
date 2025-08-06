@@ -68,7 +68,10 @@ body{
 
             #venue,#event,#faq{
                 min-height: 100vh;
-                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
                 
             }
             .venue_content{
@@ -81,20 +84,19 @@ body{
             .venue_content p{
                 margin-top: 5vh;
             }
-           .venueslider{
-            position: absolute;
-    bottom: 10vh;
-    left: 0px;
-    right: 0px;
-           }
+           
 .imagescontainer {
     /* width: 100%; */
     background-color: #EBEBE5;
     padding: 20px 10px;
-    position: absolute;
+    /* position: absolute;
     bottom: 50px;
     left: -80px;
-    right: -80px;
+    right: -80px; */
+    
+    margin-left: -80px;
+    margin-right: -80px;
+    
 }
 
 .imagescontainer .imagesbox {
@@ -208,10 +210,10 @@ body{
                     border-width:50px;
                 }
                 .imagescontainer{
-                    left: -50px;
-                    right: -50px;
+                    margin-left: -50px;
+    margin-right: -50px;
                     padding: 20px 5px;
-                    bottom: 10px;
+                    /* bottom: 10px; */
                     
                 }
                 /* .imagescontainer .imagesbox .swiper-slide{
