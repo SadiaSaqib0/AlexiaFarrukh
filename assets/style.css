@@ -94,8 +94,8 @@ body{
     left: -80px;
     right: -80px; */
     
-    margin-left: -80px;
-    margin-right: -80px;
+    margin-left: -92px;
+    margin-right: -92px;
     
 }
 
@@ -200,6 +200,9 @@ body{
             height: 20px;
             object-fit: contain;
         }
+        .faq_head{
+            font-weight: 600;
+        }
         @media screen and (max-width: 1024px) {
             #event table,.faq_content table{
                     width: 90%;
@@ -210,8 +213,8 @@ body{
                     border-width:50px;
                 }
                 .imagescontainer{
-                    margin-left: -50px;
-    margin-right: -50px;
+                    margin-left: -61px;
+    margin-right: -61px;
                     padding: 20px 5px;
                     /* bottom: 10px; */
                     
@@ -244,6 +247,12 @@ body{
             }
             @media screen and (max-width: 400px) {
                 #event table{
+                    font-size: .9rem;
+                }
+                .faq_head{
+                    font-size: .9rem;
+                }
+                .faq_desc{
                     font-size: .9rem;
                 }
             }
