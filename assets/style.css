@@ -244,6 +244,10 @@ body{
                 .faq_content table td:first-child {
                     width: 30%;
                 }
+                .faq_content table td:last-child {
+    width: 70%; /* Explicitly set the width */
+    word-break: break-word; /* This is the key fix */
+  }
             }
             @media screen and (max-width: 400px) {
                 #event table{
@@ -254,5 +258,8 @@ body{
                 }
                 .faq_desc{
                     font-size: .9rem;
+                }
+                .event_content{
+                    width: 100%;
                 }
             }
